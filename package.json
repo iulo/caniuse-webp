@@ -1,0 +1,16 @@
+{
+  "name": "caniuse-webp",
+  "version": "0.0.1",
+  "description": "browser webp detect",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "browser",
+    "webp",
+    "detect"
+  ],
+  "author": "iulo",
+  "license": "MIT"
+}
