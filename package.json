@@ -2,9 +2,10 @@
   "name": "caniuse-webp",
   "version": "0.0.1",
   "description": "browser webp detect",
-  "main": "index.js",
+  "main": "lib/caniuse-webp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "./node_modules/.bin/babel ./lib/caniuse-webp.js -o ./dist/caniuse-webp.js"
   },
   "keywords": [
     "browser",
@@ -12,5 +13,13 @@
     "detect"
   ],
   "author": "iulo",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.4.1",
+    "jest-puppeteer": "^3.2.1",
+    "karma": "^2.0.4",
+    "puppeteer": "^1.6.0"
+  }
 }
