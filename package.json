@@ -1,6 +1,6 @@
 {
   "name": "caniuse-webp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "browser webp detect",
   "main": "lib/caniuse-webp.js",
   "scripts": {
