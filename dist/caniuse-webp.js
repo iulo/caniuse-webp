@@ -73,7 +73,7 @@
         });
       });
     } else {
-      checkWebpFeature(feat, resolve);
+      checkWebpFeature(feature, resolve);
     }
 
     if (!callback) return p;
