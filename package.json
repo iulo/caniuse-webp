@@ -1,12 +1,13 @@
 {
   "name": "caniuse-webp",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "browser webp detect",
   "main": "dist/caniuse-webp.min.js",
   "module": "dist/caniuse-webp.esm.js",
   "scripts": {
     "rmDist": "rm -rf ./dist",
-    "build": "npm run rmDist && node ./scripts/build.js"
+    "build": "npm run rmDist && node ./scripts/build.js",
+    "release": "standard-version"
   },
   "keywords": [
     "browser",
@@ -40,7 +41,8 @@
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-replace": "^2.0.0",
     "rollup-plugin-uglify": "^4.0.0",
-    "rollup-plugin-visualizer": "^0.9.0"
+    "rollup-plugin-visualizer": "^0.9.0",
+    "standard-version": "^4.4.0"
   },
   "dependencies": {}
 }
