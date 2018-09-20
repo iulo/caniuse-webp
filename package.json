@@ -2,10 +2,11 @@
   "name": "caniuse-webp",
   "version": "0.0.2",
   "description": "browser webp detect",
-  "main": "lib/caniuse-webp.js",
+  "main": "dist/caniuse-webp.min.js",
+  "module": "dist/caniuse-webp.esm.js",
   "scripts": {
-    "test": "jest",
-    "build": "./node_modules/.bin/babel ./lib/caniuse-webp.js -o ./dist/caniuse-webp.js"
+    "rmDist": "rm -rf ./dist",
+    "build": "npm run rmDist && node ./scripts/build.js"
   },
   "keywords": [
     "browser",
@@ -15,11 +16,31 @@
   "author": "iulo",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "acorn-static-class-property-initializer": "^1.0.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
     "jest": "^23.4.1",
     "jest-puppeteer": "^3.2.1",
     "karma": "^2.0.4",
-    "puppeteer": "^1.6.0"
-  }
+    "lodash": "^4.17.11",
+    "puppeteer": "^1.6.0",
+    "rollup": "^0.65.2",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-filesize": "^4.0.1",
+    "rollup-plugin-json": "^3.0.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-replace": "^2.0.0",
+    "rollup-plugin-uglify": "^4.0.0",
+    "rollup-plugin-visualizer": "^0.9.0"
+  },
+  "dependencies": {}
 }
