@@ -1,6 +1,6 @@
 {
   "name": "caniuse-webp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "browser webp detect",
   "main": "dist/caniuse-webp.min.js",
   "module": "dist/caniuse-webp.esm.js",
@@ -15,8 +15,8 @@
     "detect"
   ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/iulo/caniuse-webp.git"
+    "type": "git",
+    "url": "https://github.com/iulo/caniuse-webp.git"
   },
   "author": "iulo",
   "license": "MIT",
