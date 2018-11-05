@@ -6,16 +6,18 @@
 ```js
 import caniuseWebp from 'caniuse-webp'
 
-const isSupported = caniuseWebp()
-// return {
-//   lossy: true,
-//   lossless: true,
-//   alpha: true,
-//   animation: true,
-// }
+;(async function () {
+  const isSupported = await caniuseWebp()
+  // return {
+  //   lossy: true,
+  //   lossless: true,
+  //   alpha: true,
+  //   animation: true,
+  // }
 
-const isSupportedWebpLossy = caniuseWebp('lossy')
-// return true
+  const isSupportedWebpLossy = await caniuseWebp('lossy')
+  // return true
+})()
 
 
 ```
